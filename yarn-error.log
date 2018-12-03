@@ -1,0 +1,55 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.10.1/libexec/bin/yarn.js add nodemon babel-node
+
+PATH: 
+  /Users/administrator/bin:/Users/administrator/.rbenv/bin:/Users/administrator/.rbenv/shims:/usr/local/rubygems:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  10.12.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/administrator/experiment/package.json: Unexpected token } in JSON at position 453
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.10.1/libexec/lib/cli.js:1136:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.10.1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.10.1/libexec/lib/cli.js:109:13
+
+npm manifest: 
+  {
+    "name": "experiment",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./dist/main.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "babel src -d dist",
+      "start": "npm run build && nodemon dist/src/main.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cheerio": "^0.22.0",
+      "express": "^4.16.4",
+      "lodash": "^4.17.4",
+      "nodemon": "^1.18.7",
+      "tinyreq": "^3.4.0",
+    },
+    "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-preset-es2015": "^6.24.1",
+      "rimraf": "^2.6.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
