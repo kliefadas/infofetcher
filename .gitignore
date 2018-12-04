@@ -1,4 +1,5 @@
 .idea
 npm-debug.*
 node_modules
+node_modules/sleep/b*
 .env

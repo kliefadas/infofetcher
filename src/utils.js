@@ -11,9 +11,10 @@ import {
 } from './parsers';
 
 export const requestUrl = (url, parser) => (
-  new Promise(async (resolve, reject) => {
-    let concatUrl = 'http://localhost:8080/?url=' + encodeURIComponent(url.trim()).replace("%C2%A0", "%20")
-    concatUrl = concatUrl.replace("%C2%A0", "%20")
+  new Promise( (resolve, reject) => {
+    let concatUrl = 'http://localhost:8080/?url=' + encodeURIComponent(url.trim())
+    concatUrl = concatUrl.replace(/%C2%A0/g, "%20")
+    //var concatUrl = url
     //console.log(url)
 /*    await requester.get(url.trim(), {}, function (body) {
       //console.log(parser(body))
@@ -24,22 +25,6 @@ export const requestUrl = (url, parser) => (
       if (error) reject(error);
       //console.log(parser(body).length)
       let parse = parser(body)
-      if( parse === false )
-      {
-        console.log(decodeURIComponent(url))
-        console.log((url))
-        var fs = require('fs');
-
-        var fileName = Date.now()+'.html';
-        var stream = fs.createWriteStream(fileName);
-
-        stream.once('open', function(fd) {
-          var html = decodeURIComponent(url)+"/n"+body;
-
-          stream.end(html);
-        });
-        return requestUrl(url, parser)
-      }
       resolve(parse)
     }).catch((error) => {
       console.log(error)
@@ -99,10 +84,11 @@ export const getCharacterDeathInformationByName = characterName => (
 );
 
 export const lastestTibiaCharacterDeath = characterName => (
-  new Promise((resolve, reject) => {
+  new Promise( (resolve, reject) => {
     const characterByNameUrl = `
      https://secure.tibia.com/community/?subtopic=characters&name=${characterName}
     `;
+    console.log(characterName)
     requestUrl(characterByNameUrl, lastestTibiaCharacterDeathParser).then((result) => {
       resolve(result);
     }).catch((error) => reject(error))

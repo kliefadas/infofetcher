@@ -65,7 +65,9 @@ export default class TibiaAPI {
 
   getCharakterDeathsOfList(listOfChars) {
     return new Promise((resolve, reject) => {
-      return Promise.all(listOfChars.map((listItem) => {
+      console.log(listOfChars.length, "total requ")
+      return Promise.all(listOfChars.map((listItem, index) => {
+        console.log(index)
         return this.getLastestCharacterDeathInformation(listItem.name).then((result) => {
           return result
         })

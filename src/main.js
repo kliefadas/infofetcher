@@ -27,6 +27,6 @@ let options = {
   }).catch((error) => {
     console.log(error)
   })
-  }, 5000);
+  }, 10000);
 
 });

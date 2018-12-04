@@ -79,8 +79,7 @@ const singleCharacterDeathInformationData = $ => {
       characterDeathData.push($(td).text());
     });
 
-
-    if(!checkDeathTimer(decodeURIComponent(encodeURIComponent(characterDeathData[0].trim()).replace("%C2%A0", "%20"))))
+    if(!checkDeathTimer(characterDeathData[0]))
     {
       return
     }
@@ -93,15 +92,20 @@ const singleCharacterDeathInformationData = $ => {
 };
 
 const checkDeathTimer = (time) => {
+  time = encodeURIComponent(time)
+  time = time.replace(/%C2%A0/g, "%20")
+  time = decodeURIComponent(time)
+
   var aryLastDeathTime = time.split(",");
   var aryHourMinSec = aryLastDeathTime[1].split(" ");
 
-  var aryHourMinSec = aryHourMinSec[1].split(":");
+  var aryHourMinSec = aryHourMinSec[0].split(":");
   var date01 = new Date();
-  var dateLastDeathTime = new Date(aryLastDeathTime[0);
-  dateLastDeathTime.setHours(aryHourMinSec[0]);
+  var dateLastDeathTime = new Date(aryLastDeathTime[0]);
+  dateLastDeathTime.setHours(aryHourMinSec[0].trim());
   dateLastDeathTime.setMinutes(aryHourMinSec[1]);
-  dateLastDeathTime.setSeconds(aryHourMinSec[2])
+  dateLastDeathTime.setSeconds(aryHourMinSec[2].replace(" CET", ""));
+
   var intDifSec = (date01.getTime()-dateLastDeathTime.getTime())/1000;
 
   if( intDifSec <= 10400 )
@@ -204,22 +208,34 @@ export const tibiaCharacterDeathParser = body => {
   return false
 }
 export const lastestTibiaCharacterDeathParser = body => {
-
   const $ = cheerio.load(body);
-  if($('b:contains("Character Information")').get().length !== 0) {
-    if($('b:contains("Character Deaths")').get().length !== 0){
-    return $('b:contains("Character Deaths")')
-           .parent()
-           .parent()
-           .parent()
-           .find('tr')
-           .map(singleCharacterDeathInformationData($))
-           .get()
+  try{
+    if($('b:contains("Character Information")').get().length !== 0) {
+      if($('b:contains("Character Deaths")').get().length !== 0){
+        return $('b:contains("Character Deaths")')
+          .parent()
+          .parent()
+          .parent()
+          .find('tr')
+          .map(singleCharacterDeathInformationData($))
+          .get()
+      }
+      return []
     }
-    return []
-  }
+  }catch (e) {
+    var fs = require('fs');
 
-  return false
+    var fileName = Date.now()+'xxxx.html';
+    var stream = fs.createWriteStream(fileName);
+
+    stream.once('open', function(fd) {
+
+      stream.end("Character Information"+$('b:contains("Character Information")').get().length+"\n"+body);
+    });
+    console.log(e)
+
+  }
+  return []
 }
 
 export const tibiaGuildInformationParser = body => {
