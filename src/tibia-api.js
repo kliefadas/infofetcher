@@ -9,6 +9,7 @@ import {
   getCharacterDeathInformationByName,
   lastestTibiaCharacterDeath
 } from './utils';
+const Promise = require('bluebird')
 import { isUrl } from './string-utils';
 
 export default class TibiaAPI {
@@ -66,12 +67,12 @@ export default class TibiaAPI {
   getCharakterDeathsOfList(listOfChars) {
     return new Promise((resolve, reject) => {
       console.log(listOfChars.length, "total requ")
-      return Promise.all(listOfChars.map((listItem, index) => {
-        console.log(index)
+      return Promise.map(listOfChars, listItem => {
+
         return this.getLastestCharacterDeathInformation(listItem.name).then((result) => {
           return result
         })
-      })).then((result) => {
+      },{concurrency: 10}).then((result) => {
         let returnResult = result.reduce((accumulatedResult, item) => {
           if(item.length !== 0) accumulatedResult.push(item)
           return accumulatedResult

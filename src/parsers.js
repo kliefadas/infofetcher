@@ -208,8 +208,8 @@ export const tibiaCharacterDeathParser = body => {
   return false
 }
 export const lastestTibiaCharacterDeathParser = body => {
-  const $ = cheerio.load(body);
   try{
+  const $ = cheerio.load(body);
     if($('b:contains("Character Information")').get().length !== 0) {
       if($('b:contains("Character Deaths")').get().length !== 0){
         return $('b:contains("Character Deaths")')
@@ -223,15 +223,6 @@ export const lastestTibiaCharacterDeathParser = body => {
       return []
     }
   }catch (e) {
-    var fs = require('fs');
-
-    var fileName = Date.now()+'xxxx.html';
-    var stream = fs.createWriteStream(fileName);
-
-    stream.once('open', function(fd) {
-
-      stream.end("Character Information"+$('b:contains("Character Information")').get().length+"\n"+body);
-    });
     console.log(e)
 
   }

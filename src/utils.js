@@ -9,9 +9,10 @@ import {
   tibiaGuildInformationParser,
   lastestTibiaCharacterDeathParser
 } from './parsers';
+const Promise = require("bluebird");
 
 export const requestUrl = (url, parser) => (
-  new Promise( (resolve, reject) => {
+  return new Promise( (resolve, reject) => {
     let concatUrl = 'http://localhost:8080/?url=' + encodeURIComponent(url.trim())
     concatUrl = concatUrl.replace(/%C2%A0/g, "%20")
     //var concatUrl = url
@@ -29,8 +30,12 @@ export const requestUrl = (url, parser) => (
     }).catch((error) => {
       console.log(error)
     })
-  })
-);
+  }).timeout(10000)
+    .catch(Promise.TimeoutError, function(e) {
+    console.log("could not read file within 10000ms, restart request with url",url);
+     return requestUrl(url, parser)
+  });
+};
 
 export const getTibiaWorlds = () => (
   new Promise((resolve, reject) => {
