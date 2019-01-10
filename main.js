@@ -1,5 +1,5 @@
 /* eslint-disable */
-import TibiaAPI from './tibia-api';
+import TibiaAPI from './src/tibia-api';
 //var {TibiaAPI} = require('./tibia-api/src/tibia-api')
 
 var express = require('express');

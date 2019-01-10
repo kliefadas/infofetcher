@@ -1,0 +1,337 @@
+[
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:31:03 CET",
+            "killedBy": "Died at Level 207 by Versperoth."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:15:09 CET",
+            "killedBy": "Died at Level 192 by an enfeebled silencer."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:35:20 CET",
+            "killedBy": "Killed  at Level 153 by Zalex and a clay guardian."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:11:36 CET",
+            "killedBy": "Killed  at Level 105 by Dirko and a lizard chosen."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 19:20:46 CET",
+            "killedBy": "Died at Level 84 by a dragon lord."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 19:01:10 CET",
+            "killedBy": "Died at Level 76 by a diabolic imp."
+        }
+    ]
+][][][][][][][][][][][][][
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:04:02 CET",
+            "killedBy": "Died at Level 91 by a frazzlemaw."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 19:20:46 CET",
+            "killedBy": "Died at Level 84 by a dragon lord."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 19:01:10 CET",
+            "killedBy": "Died at Level 76 by a diabolic imp."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:42:51 CET",
+            "killedBy": "Died at Level 43 by a corym skirmisher."
+        }
+    ]
+][][][][][][][
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:15:09 CET",
+            "killedBy": "Died at Level 192 by an enfeebled silencer."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:35:20 CET",
+            "killedBy": "Killed  at Level 153 by Zalex and a clay guardian."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:38:40 CET",
+            "killedBy": "Died at Level 146 by a choking fear."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:48:21 CET",
+            "killedBy": "Died at Level 112 by a silencer."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:11:36 CET",
+            "killedBy": "Killed  at Level 105 by Dirko and a lizard chosen."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:11:23 CET",
+            "killedBy": "Died at Level 98 by a lizard chosen."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:04:02 CET",
+            "killedBy": "Died at Level 91 by a frazzlemaw."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 19:20:46 CET",
+            "killedBy": "Died at Level 84 by a dragon lord."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 19:01:10 CET",
+            "killedBy": "Died at Level 76 by a diabolic imp."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:42:51 CET",
+            "killedBy": "Died at Level 43 by a corym skirmisher."
+        }
+    ]
+][][][
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:08:27 CET",
+            "killedBy": "Died at Level 425 by energy."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:02:41 CET",
+            "killedBy": "Died at Level 356 by a true midnight asura."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:36:58 CET",
+            "killedBy": "Died at Level 338 by energy."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:15:09 CET",
+            "killedBy": "Died at Level 192 by an enfeebled silencer."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:35:20 CET",
+            "killedBy": "Killed  at Level 153 by Zalex and a clay guardian."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:38:40 CET",
+            "killedBy": "Died at Level 146 by a choking fear."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:48:21 CET",
+            "killedBy": "Died at Level 112 by a silencer."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:11:36 CET",
+            "killedBy": "Killed  at Level 105 by Dirko and a lizard chosen."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:11:23 CET",
+            "killedBy": "Died at Level 98 by a lizard chosen."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:04:02 CET",
+            "killedBy": "Died at Level 91 by a frazzlemaw."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 19:20:46 CET",
+            "killedBy": "Died at Level 84 by a dragon lord."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 19:01:10 CET",
+            "killedBy": "Died at Level 76 by a diabolic imp."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:42:51 CET",
+            "killedBy": "Died at Level 43 by a corym skirmisher."
+        }
+    ]
+][][
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:38:31 CET",
+            "killedBy": "Died at Level 393 by earth."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:36:58 CET",
+            "killedBy": "Died at Level 338 by energy."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:48:21 CET",
+            "killedBy": "Died at Level 112 by a silencer."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:11:36 CET",
+            "killedBy": "Killed  at Level 105 by Dirko and a lizard chosen."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 19:20:46 CET",
+            "killedBy": "Died at Level 84 by a dragon lord."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:42:51 CET",
+            "killedBy": "Died at Level 43 by a corym skirmisher."
+        }
+    ]
+][
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:08:27 CET",
+            "killedBy": "Died at Level 425 by energy."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:40:02 CET",
+            "killedBy": "Died at Level 404 by earth."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:38:31 CET",
+            "killedBy": "Died at Level 393 by earth."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:11:46 CET",
+            "killedBy": "Died at Level 376 by a crazed summer rearguard."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:20:12 CET",
+            "killedBy": "Died at Level 365 by a menacing carnivor."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:02:41 CET",
+            "killedBy": "Died at Level 356 by a true midnight asura."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:36:58 CET",
+            "killedBy": "Died at Level 338 by energy."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:15:09 CET",
+            "killedBy": "Died at Level 192 by an enfeebled silencer."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 21:52:20 CET",
+            "killedBy": "Died at Level 152 by an omnivora."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:38:40 CET",
+            "killedBy": "Died at Level 146 by a choking fear."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:48:21 CET",
+            "killedBy": "Died at Level 112 by a silencer."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:11:23 CET",
+            "killedBy": "Died at Level 98 by a lizard chosen."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:04:02 CET",
+            "killedBy": "Died at Level 91 by a frazzlemaw."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 19:20:46 CET",
+            "killedBy": "Died at Level 84 by a dragon lord."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 19:01:10 CET",
+            "killedBy": "Died at Level 76 by a diabolic imp."
+        }
+    ],
+    [
+        {
+            "timeAgo": "Dec 05 2018, 20:42:51 CET",
+            "killedBy": "Died at Level 43 by a corym skirmisher."
+        }
+    ]
+]

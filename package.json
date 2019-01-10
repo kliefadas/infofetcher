@@ -1,11 +1,13 @@
 {
-  "name": "experiment",
+  "name": "infofetcher",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/main.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node --presets env,stage-2 src/main.js"
+    "start": "nodemon --exec babel-node --presets env,stage-2 main.js",
+    "build": "babel --presets es2015 --plugins transform-object-rest-spread -d lib/ src/",
+    "dev": "npm run compile && node lib/tibia-api"
   },
   "author": "",
   "license": "ISC",
