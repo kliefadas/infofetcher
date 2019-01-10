@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec babel-node --presets env,stage-2 main.js",
-    "build": "babel --presets es2015 --plugins transform-object-rest-spread -d lib/ src/",
+    "build": "babel --presets es2015 --plugins transform-object-rest-spread -d lib/ src/"
   },
   "author": "",
   "license": "ISC",
