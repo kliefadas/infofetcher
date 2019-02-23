@@ -13,15 +13,14 @@ const Promise = require("bluebird");
 
 export const requestUrl = (url, parser) => {
   return new Promise( (resolve, reject) => {
-    let concatUrl = 'http://localhost:8080/?url=' + encodeURIComponent(url.trim())
-    concatUrl = concatUrl.replace(/%C2%A0/g, "%20")
-    //var concatUrl = url
+    /*let concatUrl = 'http://localhost:8080/?url=' + encodeURIComponent(url.trim())
+    concatUrl = concatUrl.replace(/%C2%A0/g, "%20")*/
+    var concatUrl = url
     //console.log(url)
     /*    await requester.get(url.trim(), {}, function (body) {
           //console.log(parser(body))
           resolve(parser(body));
         });*/
-
     tinyreq(concatUrl, (error, body) => {
       if (error) reject(error);
       //console.log(parser(body).length)

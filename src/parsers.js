@@ -49,7 +49,7 @@ const characterInformationData = $ => {
       characterData.push($(td).text());
     });
     return {
-      [camelize(characterData[0].replace(/^0+/, ""))]: characterData[1]
+      [camelize(characterData[0].replace(/^0+/, "").replace(':',''))]: characterData[1].trim()
     };
   }
 };
@@ -182,7 +182,6 @@ export const tibiaCharacterDataParser = body => {
          .map(characterInformationData($))
          .get()
          .reduce((result, object) => {
-           console.log(result)
            const key = Object.keys(object);
            result[key] = object[key];
            return result;
